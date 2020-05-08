@@ -9,7 +9,9 @@ html
 
     meta name="viewport" content="width=device-width, initial-scale=1.0;"
 
-    link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" 
+    link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"
+
+    script src="https://kit.fontawesome.com/157a5204f8.js" crossorigin="anonymous"
 
     body
       nav class="main-nav"
@@ -24,12 +26,21 @@ html
           div class="line2"
           div class="line3"
 
-footer class="footer"
-  h4 ARGO
-  ul class="footer-container"
-    li class="footer-items" = link_to 'Up To The Minute'
-    li class="footer-items" = link_to 'Artists'
-    li class="footer-items" = link_to 'Contact Us'
+      footer
+        div class="main-content"
+          div class="left box"
+            h2 About us
+            div class="content"
+              p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quos eos quod, dolores aperiam nulla tempora incidunt id ullam iure quis reprehenderit totam, laboriosam at! Ab impedit magni voluptatem harum!
+          div class="center box"
+            div class="social"
+              a href="https://www.instagram.com/Argocreatives/" class="social_links"
+                div class="fab fa-twitter"
+              a href="#"class="social_links"
+                div class="fab fa-facebook-f"
+              a href="https://www.instagram.com/Argocreatives/"class="social_links"
+                div class="fab fa-instagram"
+
 
   = yield
 
@@ -42,7 +53,7 @@ javascript:
     burger.addEventListener("click", () => {
       nav.classList.toggle("nav-active");
     navLinks.forEach((link, application) => {
-      link.style.animation = `navLinkFade 0.10s ease forwards ${application / 7 + 0.2}s`;
+      link.style.animation = `navLinkFade 0.10s ease forwards ${application / 7 + 0.25}s`;
     });
     });
 
