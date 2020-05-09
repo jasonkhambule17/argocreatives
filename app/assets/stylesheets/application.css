@@ -208,21 +208,22 @@ a {
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
-}
-
-/*Js action */
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
   }
-  to {
-    opacity: 1;
-    transform: translateX(50px);
+
+  /*Js action */
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(50px);
+    }
   }
 }
