@@ -1,0 +1,10 @@
+table
+  tr
+    th Article
+  - @articles.each do |article|
+    tr
+      th Title
+      td = article.title
+    tr
+      th Article
+      td = article.text
