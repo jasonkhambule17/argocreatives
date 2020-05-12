@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get 'articles/index'
   resources :welcome, only: [:index], :path => "home"
 
-  resources :articles, only: [:index], :path => "news"
+  resources :articles, only: [:index, :show], :path => "news"
   root 'welcome#index'
 end

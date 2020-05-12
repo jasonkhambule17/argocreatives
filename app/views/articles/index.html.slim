@@ -16,7 +16,7 @@
       .card
         .card-image 
         .card-text = article.title
-        = link_to 'Read More' 
+        = link_to 'Read More', article_path(article)
         .date = article.created_at.strftime("%d %b %Y at %I:%M %p")
 
 footer
