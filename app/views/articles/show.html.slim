@@ -1,0 +1,9 @@
+= stylesheet_link_tag 'article_show', media: 'all', 'data-turbolinks-track': 'reload'
+
+
+.article-container
+  .body
+    .card
+      .card-image 
+      .card-text = @article.title
+      .date  = @article.text
