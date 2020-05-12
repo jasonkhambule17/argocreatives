@@ -6,8 +6,6 @@ html
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-     Global site tag (gtag.js) - Google Analytics
-      async="" src="https://www.googletagmanager.com/gtag/js?id=UA-165929295-1" 
 
     meta name="viewport" content="width=device-width, initial-scale=1.0;"
 
@@ -64,16 +62,6 @@ javascript:
 
   };
   navSlide();
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-
-  gtag("config", "UA-165929295-1");
-
-
 
 
 

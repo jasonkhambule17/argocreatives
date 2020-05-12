@@ -1,7 +1,1 @@
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag("js", new Date());
-
-gtag("config", "UA-165929295-1");
+//= require active_admin/base
