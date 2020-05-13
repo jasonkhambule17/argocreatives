@@ -18,6 +18,24 @@
         .card-text = article.title
         = link_to 'Read More', article_path(article)
         .date = article.created_at.strftime("%d %b %Y at %I:%M %p")
+/-@articles.each do |article|
+/.cards
+  ul
+    li
+      figure
+        img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
+        figcaption
+          h3 = article.title
+      p = article.text
+      .a href="#"  Read More
+    li
+      figure
+        img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
+        figcaption
+          h3 = article.title
+      p = article.text
+      .a href="#"  Read More
+
 
 footer
     div class="main-content"
