@@ -25,14 +25,11 @@ a:hover {
   background: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg")
     center;
   background-size: cover;
-  padding: 6rem 2rem;
+  padding: 6rem 4rem;
   /* grid styles */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
-}
-h1 {
-  text-align: center;
 }
 
 .h1__underline {
@@ -43,6 +40,18 @@ h1 {
   margin-bottom: 16px;
   padding: 12px;
   background-color: #00bff3;
+  text-align: center;
+}
+
+.h1_artist_underline {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: #00bff3;
+  text-align: center;
 }
 
 /* MAIN CONTAINER */
