@@ -130,8 +130,20 @@ a:hover {
   letter-spacing: 0.05em;
 }
 @media screen and (max-width: 768px) {
+  .hero {
+    /* Photo by mnm.all on Unsplash */
+    background: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg")
+      center;
+    background-size: cover;
+    padding: 12rem 2rem;
+    /* grid styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+  }
   .h1__underline {
     width: 100%;
+    font-size: 20px;
   }
   /*Footer styling */
 
