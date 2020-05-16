@@ -9,77 +9,15 @@ br
       p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
       .a href="#breweries"  Read More
 
-.cardss
-  .header Up To The Minute 
+h1 class="h1__underline" Up To The Minute
 
-
-.cards
-    ul
-      li
-        figure
-          img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
-          figcaption
-            h3 Billions upon billions
-        p Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?
-        .a href="#"  Read More
-      li
-        figure
-          img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
-          figcaption
-            h3 Drake Equation
-        p Another world citizens of distant epochs from which we spring descended from astronomers Orion's sword shores of the cosmic ocean.
-        .a href="#"  Read More
-      li
-        figure
-          img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
-          figcaption
-            h3 Vast cosmic arena
-        p Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas brain is the seed of intelligence.
-        .a href="#"  Read More
-
-
-
-.cardss
- .header Artists
-
-.cards
-    ul
-      li
-        figure
-          img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
-          figcaption
-            h3 Billions upon billions
-        p Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?
-        .a href="#"  Read More
-      li
-        figure
-          img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
-          figcaption
-            h3 Drake Equation
-        p Another world citizens of distant epochs from which we spring descended from astronomers Orion's sword shores of the cosmic ocean.
-        .a href="#"  Read More
-      li
-        figure
-          img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
-          figcaption
-            h3 Vast cosmic arena
-        p Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas brain is the seed of intelligence.
-        .a href="#"  Read More
-
-
-footer
-    div class="main-content"
-      div class="left box"
-        h2 About us
-        div class="content"
-          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quos eos quod, dolores aperiam nulla tempora incidunt id ullam iure quis reprehenderit totam, laboriosam at! Ab impedit magni voluptatem harum!
-      div class="center box"
-        div class="social"
-          a href="https://twitter.com/Argocreatives" class="social_links"
-            div class="fab fa-twitter"
-          a href="#"class="social_links"
-            div class="fab fa-facebook-f"
-          a href="https://www.instagram.com/Argocreatives/"class="social_links"
-            div class="fab fa-instagram"
-          a href ="" class="social_links"
-            div class="fab fa-spotify"
+.articles 
+  - @articles.each do |article|
+      div class="articles__article-card"
+        div class="articles__article-card__top"
+          span class="articles__article-card__top__article-cat letter-spacing" NEWS
+        div class="articles__article-card__bottom"
+          div class="articles__article-card__bottom__date-title"
+            time class="articles__article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
+          h2 class="articles__article-card__bottom__date-title__title" = article.title
+        .a = link_to'Read More', article_path(article)
