@@ -1,40 +1,19 @@
-/- @articles.each do |article|
-
-/body
-  div class="card"
-    div class="card-image"
-    div class="card-text"
-      span class="date"
-        span = article.title
-        span = article.text
-    div="card-stats"
-
 = stylesheet_link_tag 'articles_index', media: 'all', 'data-turbolinks-track': 'reload'
-- @articles.each do |article|
-  .article-container
-    .body
-      .card
-        .card-image 
-        .card-text = article.title
-        = link_to 'Read More', article_path(article)
-        .date = article.created_at.strftime("%d %b %Y at %I:%M %p")
-/-@articles.each do |article|
-/.cards
-  ul
-    li
-      figure
-        img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
-        figcaption
-          h3 = article.title
-      p = article.text
-      .a href="#"  Read More
-    li
-      figure
-        img alt=("") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" /
-        figcaption
-          h3 = article.title
-      p = article.text
-      .a href="#"  Read More
+br
+br
+br
+
+h1 class="h1__underline" Up To The Minute
+.articles 
+  - @articles.each do |article|
+      div class="articles__article-card"
+        div class="articles__article-card__top"
+          span class="articles__article-card__top__article-cat letter-spacing" NEWS
+        div class="articles__article-card__bottom"
+          div class="articles__article-card__bottom__date-title"
+            time class="articles__article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
+          h2 class="articles__article-card__bottom__date-title__title" = article.title
+        .a = link_to'Read More', article_path(article)
 
 
 footer

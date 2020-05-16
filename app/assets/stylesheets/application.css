@@ -10,7 +10,7 @@ input {
   width: 100%;
 }
 body {
-  padding-bottom: 16rem;
+  padding-bottom: 8.1rem;
   position: relative;
 }
 
@@ -76,6 +76,7 @@ a {
   body {
     overflow-x: hidden;
     position: relative;
+    padding-bottom: 24rem;
   }
 
   /* Navigation bar styling */
@@ -98,6 +99,11 @@ a {
 
   .nav-link {
     opacity: 0;
+  }
+
+  .main-nav {
+    position: fixed;
+    min-height: 9vh;
   }
 
   .burger {

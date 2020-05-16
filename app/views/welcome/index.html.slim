@@ -10,7 +10,6 @@ br
       .a href="#breweries"  Read More
 
 h1 class="h1__underline" Up To The Minute
-
 .articles 
   - @articles.each do |article|
       div class="articles__article-card"
@@ -21,3 +20,56 @@ h1 class="h1__underline" Up To The Minute
             time class="articles__article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
           h2 class="articles__article-card__bottom__date-title__title" = article.title
         .a = link_to'Read More', article_path(article)
+.back
+  h1 class="h1_artist_underline" Artists
+  .articles_artist
+      div class="articles_artist_article-card"
+        div class="articles_artist_article-card__top"
+          span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
+        div class="articles_artist_article-card__bottom"
+          div class="articles_artist_article-card__bottom__date-title"
+            time class="articles_artist_article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
+          h2 class="articles_artist_article-card__bottom__date-title__title" 
+        .a = link_to'View Artist'
+      div class="articles_artist_article-card"
+        div class="articles_artist_article-card__top"
+          span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
+        div class="articles_artist_article-card__bottom"
+          div class="articles_artist_article-card__bottom__date-title"
+            time class="articles_artist_article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
+          h2 class="articles_artist_article-card__bottom__date-title__title" 
+        .a = link_to'View Artist'
+      div class="articles_artist_article-card"
+        div class="articles_artist_article-card__top"
+          span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
+        div class="articles_artist_article-card__bottom"
+          div class="articles_artist_article-card__bottom__date-title"
+            time class="articles_artist_article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
+          h2 class="articles_artist_article-card__bottom__date-title__title" 
+        .a = link_to'View Artist'
+      div class="articles_artist_article-card"
+        div class="articles_artist_article-card__top"
+          span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
+        div class="articles_artist_article-card__bottom"
+          div class="articles_artist_article-card__bottom__date-title"
+            time class="articles_artist_article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
+          h2 class="articles_artist_article-card__bottom__date-title__title" 
+        .a = link_to'View Artist'
+
+
+footer
+    div class="main-content"
+      div class="left box"
+        h2 About us
+        div class="content"
+          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quos eos quod, dolores aperiam nulla tempora incidunt id ullam iure quis reprehenderit totam, laboriosam at! Ab impedit magni voluptatem harum!
+      div class="center box"
+        div class="social"
+          a href="https://twitter.com/Argocreatives" class="social_links"
+            div class="fab fa-twitter"
+          a href="#"class="social_links"
+            div class="fab fa-facebook-f"
+          a href="https://www.instagram.com/Argocreatives/"class="social_links"
+            div class="fab fa-instagram"
+          a href ="" class="social_links"
+            div class="fab fa-spotify"

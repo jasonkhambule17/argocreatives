@@ -3,11 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.flex {
-  display: flex;
-  margin: 0 auto;
-}
-
 .a {
   background-color: #00bff3;
   text-decoration: none;
@@ -36,20 +31,18 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
 }
-@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:bold,medium");
-
 h1 {
   text-align: center;
-  margin: 16px;
-  color: #283d4a;
 }
 
 .h1__underline {
   margin-left: auto;
   margin-right: auto;
-  width: 22%;
+  width: 100%;
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: #00bff3;
 }
 
 /* MAIN CONTAINER */
@@ -126,4 +119,186 @@ h1 {
 
 .letter-spacing {
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  .h1__underline {
+    width: 100%;
+  }
+  /*Footer styling */
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #00bff3;
+  }
+
+  .main-content {
+    display: flex;
+  }
+
+  .main-content,
+  .box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 0vh 1vh;
+  }
+
+  .center {
+    position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px 0px 26px;
+    margin: 0px;
+  }
+  .social_links {
+    height: 40px;
+    width: 40px;
+  }
+  .social {
+    position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+/* MAIN CONTAINER */
+
+.articles_artist {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.back {
+  width: 100%;
+  height: auto;
+  background-color: #00bff3;
+}
+
+/* ARTICLE CARDS */
+
+.articles_artist_article-card {
+  height: 400px;
+  width: 350px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.articles_artist_article-card:hover {
+  border-bottom: 15px solid wheat;
+  box-sizing: border-box;
+}
+
+/* ARTICLE CARDS - TOP */
+
+.articles_artist_article-card__top {
+  background-image: url("https://i.etsystatic.com/10637736/r/il/1dd6ad/1201110200/il_570xN.1201110200_g1q8.jpg");
+  background-size: cover;
+  height: 60%;
+  position: relative;
+}
+
+.articles_artist_article-card__top__article-cat {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #00bff3;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 200;
+}
+
+/* ARTICLE CARDS - BOTTOM */
+
+.articles_artist_article-card__bottom {
+  background: rgba(234, 239, 242, 0.7);
+  height: 40%;
+}
+
+.articles_artist_article-card__bottom__date-title {
+  padding: 15px;
+}
+
+.articles_artist_article-card__bottom__date-title__date {
+  font-size: 13px;
+  color: #99a7b0;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 200;
+}
+
+.articles_artist_article-card__bottom__date-title__title {
+  margin-top: 6px;
+  font-family: "Libre Franklin", sans-serif;
+  color: #283d4a;
+  padding: 0px 20px;
+}
+
+/* UTILITY CLASSES */
+
+.letter-spacing {
+  letter-spacing: 0.05em;
+}
+
+/*Footer bar styling */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #00bff3;
+  padding: 0px 20px 20px 20px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content,
+.box {
+  flex-basis: 70%;
+  padding: 0vh 11vh;
+}
+
+.box,
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box,
+.content {
+  margin: 1vh 0vh 0vh 0vh;
+}
+
+.left,
+.right,
+.center,
+.content,
+.social {
+  margin: 10px 0px 0px 0px;
+}
+
+.left,
+.content,
+.social,
+a {
+  padding: 0 2px;
+}
+
+.social {
+  position: center center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 36px 0px 0px 20px;
 }
