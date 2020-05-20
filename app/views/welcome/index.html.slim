@@ -1,68 +1,82 @@
-= stylesheet_link_tag 'welcome_index', media: 'all', 'data-turbolinks-track': 'reload'
-br
-br
-br
-.wrapper
-  .hero
-    h1 You thirsty?
-    article
-      p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
-      .a href="#breweries"  Read More
+= stylesheet_link_tag 'welcome', media: 'all', 'data-turbolinks-track': 'reload'
 
-h1 class="h1__underline" Up To The Minute
-.articles 
+#carouselExampleIndicators.carousel.slide data-ride="carousel" 
+  ol.carousel-indicators
+    li.active data-slide-to="0" data-target="#carouselExampleIndicators" 
+    li data-slide-to="1" data-target="#carouselExampleIndicators" 
+    li data-slide-to="2" data-target="#carouselExampleIndicators" 
+  .carousel-inner
+    .carousel-item.active
+      img.d-block.w-100 alt=("First slide") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
+      .carousel-caption.d-none.d-md-block
+        h3 uuou  out
+        a.h1 href="/news/2" Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis ea quas necessitatibus esse, ul
+    .carousel-item
+      img.d-block.w-100 alt=("Second slide") src="https://artmarketmag.com/wp-content/uploads/2019/11/PSX_20170216_010838-1000x400.jpg"
+      .carousel-caption.d-none.d-md-block
+        h5 uut uot uot 
+        a.h1 href="/news/3" Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis ea quas necessitatibus esse, ul
+    .carousel-item
+      img.d-block.w-100 alt=("Third slide") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
+      .carousel-caption.d-none.d-md-block
+        h5 outoutou o8tuot
+        a.h1 href="/news/4" Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis ea quas necessitatibus esse, ul
+  a.carousel-control-prev data-slide="prev" href="#carouselExampleIndicators" role="button" 
+    span.carousel-control-prev-icon aria-hidden="true" 
+    span.sr-only Previous
+  a.carousel-control-next data-slide="next" href="#carouselExampleIndicators" role="button" 
+    span.carousel-control-next-icon aria-hidden="true" 
+    span.sr-only Next
+
+div class="headers" Up To The Minute
+.articles
   - @articles.each do |article|
-      div class="articles__article-card"
+      div class="articles__article-card" 
         div class="articles__article-card__top"
           span class="articles__article-card__top__article-cat letter-spacing" NEWS
         div class="articles__article-card__bottom"
           div class="articles__article-card__bottom__date-title"
             time class="articles__article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
           h2 class="articles__article-card__bottom__date-title__title" = article.title
-        .a = link_to'Read More', article_path(article)
+          = link_to "Read More", article_path(article), class:"btn btn-primary"
+
+
+/.back
+  div class="headers" Up To The Minute
+  .card-columns
+    - @articles.each do |article|
+      .card style=("width: 24rem;") 
+        img.card-img-top alt="..." src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
+        .card-body
+          h5.card-title = article.title
+          p.card-text = article.text
+          a.btn.btn-primary href="#"  Go somewhere
+
 .back
-  h1 class="h1_artist_underline" Artists
+  div class="headers" Artists
   .articles_artist
       div class="articles_artist_article-card"
         div class="articles_artist_article-card__top"
           span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
-        div class="articles_artist_article-card__bottom"
-          div class="articles_artist_article-card__bottom__date-title"
-            time class="articles_artist_article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
-          h2 class="articles_artist_article-card__bottom__date-title__title" 
-        .a = link_to'View Artist'
+        .a_artist = link_to'View Artist'
       div class="articles_artist_article-card"
         div class="articles_artist_article-card__top"
           span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
-        div class="articles_artist_article-card__bottom"
-          div class="articles_artist_article-card__bottom__date-title"
-            time class="articles_artist_article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
-          h2 class="articles_artist_article-card__bottom__date-title__title" 
-        .a = link_to'View Artist'
+        .a_artist = link_to'View Artist'
       div class="articles_artist_article-card"
         div class="articles_artist_article-card__top"
           span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
-        div class="articles_artist_article-card__bottom"
-          div class="articles_artist_article-card__bottom__date-title"
-            time class="articles_artist_article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
-          h2 class="articles_artist_article-card__bottom__date-title__title" 
-        .a = link_to'View Artist'
+        .a_artist = link_to'View Artist'
       div class="articles_artist_article-card"
-        div class="articles_artist_article-card__top"
-          span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
-        div class="articles_artist_article-card__bottom"
-          div class="articles_artist_article-card__bottom__date-title"
-            time class="articles_artist_article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
-          h2 class="articles_artist_article-card__bottom__date-title__title" 
-        .a = link_to'View Artist'
-
+          div class="articles_artist_article-card__top"
+            span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
+          .a_artist = link_to'View Artist'
 
 footer
     div class="main-content"
       div class="left box"
-        h2 About us
         div class="content"
-          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quos eos quod, dolores aperiam nulla tempora incidunt id ullam iure quis reprehenderit totam, laboriosam at! Ab impedit magni voluptatem harum!
+          p Music, People, Lifestyle and Future Creatives
       div class="center box"
         div class="social"
           a href="https://twitter.com/Argocreatives" class="social_links"
