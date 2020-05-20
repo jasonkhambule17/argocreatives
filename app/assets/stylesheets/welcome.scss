@@ -1,14 +1,32 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
 /* Generic styles */
 html {
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.btn,
+.btn-primary {
+  text-align: left;
+  background-color: white;
+  color: black !important;
+  border-color: white;
+}
 
-.a {
+.btn:hover {
   background-color: #00bff3;
+  border-color: white;
+  color: white !important;
+}
+
+.h1 {
+  font-weight: 700;
+}
+.a_artist {
+  background-color: white;
   text-decoration: none;
   color: white;
   border-radius: 0.2rem;
@@ -16,11 +34,23 @@ html {
   display: inline-block;
   transition: all 0.3s;
   width: 100%;
+  text-align: left;
+}
+
+.a_article {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 0.2rem;
   text-align: center;
+  display: inline-block;
+  transition: all 0.3s;
+  width: 100%;
+  text-align: left;
 }
 
 a:hover {
-  opacity: 0.6;
+  opacity: 1.6;
 }
 
 /* Styles for the hero image */
@@ -29,168 +59,136 @@ a:hover {
   background: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg")
     center;
   background-size: cover;
-  padding: 4rem 2rem;
+  padding: 6rem 4rem;
   /* grid styles */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
 }
 
-.hero > * {
-  color: white;
+.h1__underline {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: #00bff3;
+  text-align: center;
 }
 
-.hero > h1 {
-  font-size: 4rem;
-  padding-bottom: 1rem;
+.headers {
+  text-align: left;
+  color: black;
+  padding: 36px !important;
+  font-size: 25px;
 }
 
-.hero > article > p {
-  font-size: 1.5rem;
+.h1_artist_underline {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: #00bff3;
+  text-align: center;
+}
+
+/* MAIN CONTAINER */
+
+.articles {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* ARTICLE CARDS */
+
+.articles__article-card {
+  height: 400px;
+  width: 350px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+/* ARTICLE CARDS - TOP */
+
+.articles__article-card__top {
+  background-image: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg");
+  background-size: cover;
+  height: 60%;
+  position: relative;
+}
+
+.articles__article-card__top__article-cat {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #00bff3;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: 200;
 }
 
-.hero > article > a {
-  padding: 1rem;
-  margin-top: 0.75rem;
+/* ARTICLE CARDS - BOTTOM */
+
+.articles__article-card__bottom {
+  background: white;
+  height: 40%;
 }
 
-/* cards styles */
-.cards {
-  padding: 0.5rem 15rem;
-  box-shadow: 0px 0px 8px rgba(11, 104, 133, 0.9);
+.articles__article-card__bottom__date-title {
+  padding: 15px;
 }
 
-.cards > ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 1rem;
+.articles__article-card__bottom__date-title__date {
+  font-size: 13px;
+  color: #99a7b0;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 200;
 }
 
-.cards > ul > li {
-  border: 1px solid #e2e2e2;
-  border-radius: 0.5rem;
+.articles__article-card__bottom__date-title__title {
+  margin-top: 6px;
+  font-family: "Libre Franklin", sans-serif;
+  color: black;
+  padding: 0px 14px;
 }
 
-.cards > ul > li > figure {
-  max-height: 220px;
-  overflow: hidden;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  position: relative;
-}
+/* UTILITY CLASSES */
 
-.cards > ul > li > figure > img {
-  width: 100%;
-}
-
-.cards > ul > li > figure > figcaption {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-}
-
-.cards > ul > li > figure > figcaption > h3 {
-  color: white;
-  padding: 0.75rem;
-  font-size: 1.25rem;
-}
-
-.cards > ul > li > p {
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 1rem 0.75rem;
-  color: #000;
-}
-
-.card > ul > li > a {
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-}
-
-.cardss {
-  max-height: 220px;
-  overflow: hidden;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  position: relative;
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 1rem 1.5rem;
-  color: #000;
-}
-
-.header {
-  color: #000000;
-}
-
-/*Footer bar styling */
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #00bff3;
-  padding: 0px 20px 20px 20px;
-}
-
-.main-content {
-  display: flex;
-}
-
-.main-content,
-.box {
-  flex-basis: 70%;
-  padding: 0vh 11vh;
-}
-
-.box,
-h2 {
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.box,
-.content {
-  margin: 1vh 0vh 0vh 0vh;
-}
-
-.left,
-.right,
-.center,
-.content,
-.social {
-  margin: 10px 0px 0px 0px;
-}
-
-.left,
-.content,
-.social,
-a {
-  padding: 0 2px;
-}
-
-.social {
-  position: center center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 36px 0px 0px 20px;
+.letter-spacing {
+  letter-spacing: 0.05em;
 }
 @media screen and (max-width: 768px) {
-  /* cards styles */
-  .cards {
-    padding: 0.5rem 1rem;
+  .hero {
+    /* Photo by mnm.all on Unsplash */
+    background: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg")
+      center;
+    background-size: cover;
+    padding: 12rem 2rem;
+    /* grid styles */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+  }
+  .h1__underline {
+    width: 100%;
+    font-size: 20px;
   }
   /*Footer styling */
 
   footer {
     position: absolute;
     bottom: 0;
-    width: 416px;
+    width: 100%;
     background-color: #00bff3;
+    margin-bottom: 0;
   }
 
   .main-content {
@@ -224,4 +222,138 @@ a {
     justify-content: space-around;
     padding: 0;
   }
+}
+
+/* MAIN CONTAINER */
+
+.articles_artist {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.back {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+/* ARTICLE CARDS */
+
+.articles_artist_article-card {
+  height: 300px;
+  width: 350px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+/* ARTICLE CARDS - TOP */
+
+.articles_artist_article-card__top {
+  background-image: url("https://i.etsystatic.com/10637736/r/il/1dd6ad/1201110200/il_570xN.1201110200_g1q8.jpg");
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.articles_artist_article-card__top__article-cat {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #00bff3;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 200;
+}
+
+/* ARTICLE CARDS - BOTTOM */
+
+.articles_artist_article-card__bottom {
+  height: 40%;
+}
+
+.articles_artist_article-card__bottom__date-title {
+  padding: 15px;
+}
+
+.articles_artist_article-card__bottom__date-title__date {
+  font-size: 13px;
+  color: #99a7b0;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 200;
+}
+
+.articles_artist_article-card__bottom__date-title__title {
+  margin-top: 6px;
+  font-family: "Libre Franklin", sans-serif;
+  color: #283d4a;
+  padding: 0px 20px;
+}
+
+/* UTILITY CLASSES */
+
+.letter-spacing {
+  letter-spacing: 0.05em;
+}
+
+/*Footer bar styling */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #00bff3;
+  padding: 0px 20px 20px 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content,
+.box {
+  flex-basis: 70%;
+  padding: 0vh 25vh 1vh 25vh;
+  text-align: center;
+  color: white;
+}
+
+.box,
+h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.box,
+.content {
+  margin: 1vh 0vh 0vh 0vh;
+}
+
+.left,
+.right,
+.center,
+.content,
+.social {
+  margin: 10px 0px -10px 0px;
+}
+
+.left,
+.content,
+.social,
+a {
+  padding: 0 2px;
+}
+
+.social {
+  position: center center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 36px 0px 0px 0px;
 }

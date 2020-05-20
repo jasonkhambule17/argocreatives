@@ -1,224 +1,34 @@
-.body {
-  position: center center !important;
-  overflow: none;
-  color: black;
-  border-radius: 200px;
-  align-items: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.article-image {
-  background-repeat: no-repeat;
-  background-image: url("https://omegamusicdayton.com/Photo/418459519694");
-  object-fit: cover;
-  width: 100%;
-  height: 500px;
+.news-section {
+  padding: 6rem 20rem 0rem 20rem;
 }
 
-.article-container {
-  margin: 80px 32px;
-  display: inline-block;
-}
-
-.card {
-  display: grid;
-  grid-auto-columns: auto;
-  grid-auto-rows: 440px 40px 200px;
-  grid-template-areas: "image" "text" "stats";
-  background: #00bff3;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-}
-
-.card-image {
-  grid-area: image;
-  background-image: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg");
-  background-size: 880px;
-  min-height: 100%;
-  min-width: 100%;
-  background: cover;
-  background-repeat: no-repeat;
-}
-
-.card-text {
-  grid-area: text;
-  margin: 20px;
-  font-size: 23px;
-}
-
-.card-text,
-.date {
-  color: black;
-  font-size: 13px;
-  margin-bottom: 10px;
-  padding: 40px;
-}
-
-.card-text,
-p {
-  color: black;
-  font-weight: 300;
-}
-
-.card-text,
-h2 {
-  margin-top: 10px;
-}
-
-.card-stats {
-  grid-area: stats;
-}
-
-/*Footer styling*/
-
-/*Footer bar styling */
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #00bff3;
-  padding: 0px 20px 20px 20px;
-}
-
-.main-content {
-  display: flex;
-}
-
-.main-content,
-.box {
-  flex-basis: 70%;
-  padding: 0vh 11vh;
-}
-
-.box,
-h2 {
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.box,
-.content {
-  margin: 1vh 0vh 0vh 0vh;
-}
-
-.left,
-.right,
-.center,
-.content,
-.social {
-  margin: 10px 0px 0px 0px;
-}
-
-.left,
-.content,
-.social,
-a {
-  padding: 0 2px;
-}
-
-.social {
-  position: center center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 36px 0px 0px 20px;
+.news-section p {
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .body {
-    display: flex;
-    overflow: none;
-    color: black;
-    border-radius: 200px;
-  }
+}
 
-  .article-container {
-    margin: 60px 28px 0px 28px;
-    display: inline-block;
-    padding: 0px;
-  }
-  .card {
-    display: grid;
-    grid-template-columns: 360px;
-    grid-template-rows: 350px 50px 50px;
-    grid-template-areas: "image" "text" "stats";
-    background: #00bff3;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    text-align: center;
-  }
+.center {
+  align-items: center;
+  display: flex;
+  padding-left: 650px;
+  padding-top: 50px;
+}
 
-  .card-image {
-    grid-area: image;
-    background-image: url("https://omegamusicdayton.com/Photo/418459519694");
-    background-size: cover;
-  }
+.a {
+  padding: 20px;
+}
 
-  .card-text {
-    grid-area: text;
-    margin: 20px;
-    font-size: 23px;
-  }
+.h3 {
+  padding: 80px 0px 20px 20px;
+  text-align: left;
+}
 
-  .card-text,
-  .date {
-    color: black;
-    font-size: 13px;
-    margin-bottom: 10px;
-  }
-
-  .card-text,
-  p {
-    color: black;
-    font-weight: 300;
-  }
-
-  .card-text,
-  h2 {
-    margin-top: 10px;
-  }
-
-  .card-stats {
-    grid-area: stats;
-  }
-
-  /*Footer styling */
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 416px;
-    background-color: #00bff3;
-  }
-
-  .main-content {
-    display: flex;
-  }
-
-  .main-content,
-  .box {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    padding: 0vh 1vh;
-  }
-
-  .center {
-    position: center center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px 0px 0px 26px;
-    margin: 0px;
-  }
-  .social_links {
-    height: 40px;
-    width: 40px;
-  }
-  .social {
-    position: center center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0;
-  }
+.card-group {
+  margin: 20px;
 }
