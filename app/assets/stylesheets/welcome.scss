@@ -222,6 +222,33 @@ a:hover {
     justify-content: space-around;
     padding: 0;
   }
+  .articles_artist_article-card {
+    width: 100%;
+  }
+  .main-content,
+  .box {
+    flex-basis: 70%;
+    text-align: center;
+    color: white;
+  }
+  .box {
+    padding: 1vh;
+  }
+
+  .w-100 {
+    padding-top: 10vh;
+    width: 180% !important;
+  }
+
+  .carousel-control-next {
+    z-index: 0;
+  }
+  .carousel-control-prev {
+    z-index: 0;
+  }
+  .carousel-indicators {
+    z-index: 0;
+  }
 }
 
 /* MAIN CONTAINER */

@@ -3,32 +3,46 @@ html {
 }
 
 .news-section {
-  padding: 6rem 20rem 0rem 20rem;
+  padding: 2rem 8rem 2rem 8rem;
 }
 
 .news-section p {
   font-size: 1.1rem;
 }
-
-@media screen and (max-width: 768px) {
-}
-
 .center {
   align-items: center;
   display: flex;
-  padding-left: 650px;
+  padding-left: 84vh;
   padding-top: 50px;
+  padding-right: 40px;
 }
 
-.a {
+.btn-social {
   padding: 20px;
 }
+@media screen and (max-width: 768px) {
+  .news-section {
+    padding: 1rem 2rem 0rem 2rem;
+  }
 
-.h3 {
-  padding: 80px 0px 20px 20px;
-  text-align: left;
-}
+  .center {
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 40px;
+  }
 
-.card-group {
-  margin: 20px;
+  .a {
+    padding: 20px;
+  }
+
+  .h3 {
+    padding: 80px 0px 20px 20px;
+    text-align: left;
+  }
+
+  .card-group {
+    margin: 20px;
+  }
 }
