@@ -9,10 +9,10 @@ html {
 .news-section p {
   font-size: 1.1rem;
 }
-.center {
+.center_share {
   align-items: center;
   display: flex;
-  padding-left: 84vh;
+  padding-left: 82vh;
   padding-top: 50px;
   padding-right: 40px;
 }
@@ -20,6 +20,11 @@ html {
 .btn-social {
   padding: 20px;
 }
+
+.card-group {
+  padding-bottom: 120px;
+}
+
 @media screen and (max-width: 768px) {
   .news-section {
     padding: 1rem 2rem 0rem 2rem;
@@ -45,4 +50,118 @@ html {
   .card-group {
     margin: 20px;
   }
+
+  .card-group {
+    padding-bottom: 18px;
+  }
+
+  .center_share {
+    align-items: center;
+    display: flex;
+    padding-left: 17vh;
+    padding-top: 50px;
+    padding-right: 40px;
+  }
+
+  /*Footer styling */
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #00bff3;
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    display: flex;
+  }
+
+  .main-content,
+  .box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 0vh 1vh;
+  }
+
+  .center {
+    position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px 0px 26px;
+    margin: 0px;
+  }
+  .social_links {
+    height: 40px;
+    width: 40px;
+  }
+  .social {
+    position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+.h3 {
+  padding: 20px;
+}
+/*Footer bar styling */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #00bff3;
+  padding: 0px 20px 20px 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content,
+.box {
+  flex-basis: 70%;
+  text-align: center;
+  color: white;
+}
+
+.box,
+h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.box,
+.content {
+  margin: 1vh 0vh 0vh 0vh;
+}
+
+.left,
+.right,
+.center,
+.content,
+.social {
+  margin: 10px 0px -10px 0px;
+}
+
+.left,
+.content,
+.social,
+a {
+  padding: 0 2px;
+}
+
+.social {
+  position: center center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 36px 0px 0px 0px;
 }

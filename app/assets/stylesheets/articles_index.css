@@ -80,7 +80,7 @@ a:hover {
 .headers {
   text-align: left;
   color: black;
-  padding: 36px !important;
+  padding: 66px 36px 36px 36px !important;
   font-size: 25px;
 }
 
@@ -168,6 +168,10 @@ a:hover {
 @media screen and (max-width: 768px) {
   .carousel {
     margin-top: 20%;
+  }
+
+  .headers {
+    padding: 75px 36px 36px 36px !important;
   }
   .hero {
     /* Photo by mnm.all on Unsplash */
@@ -321,7 +325,6 @@ footer {
 .main-content,
 .box {
   flex-basis: 70%;
-  padding: 0vh 25vh 1vh 25vh;
   text-align: center;
   color: white;
 }
