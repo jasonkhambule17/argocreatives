@@ -29,7 +29,7 @@ a:hover {
 /* Navigation bar styling */
 
 .main-nav {
-  z-index: +1;
+  z-index: 500;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -85,7 +85,7 @@ a:hover {
   body {
     overflow-x: hidden;
     position: relative;
-    padding-bottom: 27em;
+    padding-bottom: 120px;
   }
 
   /* Navigation bar styling */
@@ -103,7 +103,7 @@ a:hover {
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
-    padding: 0vh 30vh 35vh 0vh;
+    padding: 0vh 16vh 35vh 0vh;
   }
 
   .nav-link {

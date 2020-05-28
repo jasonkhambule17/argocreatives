@@ -1,10 +1,5 @@
 = stylesheet_link_tag 'article_show', media: 'all', 'data-turbolinks-track': 'reload'
 
-
-/.jumbotron.jumbotron-fluid
-  .container
-  img src="https://omegamusicdayton.com/Photo/418459519694"
-
 #carouselExampleIndicators.carousel.slide data-ride="carousel" 
   .carousel-inner
     .carousel-item.active
@@ -15,7 +10,7 @@
 .news-section
   p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias tempora sed aliquid ab quam possimus id animi ratione, ea veritatis sunt rem optio eos quis suscipit, harum a ipsam nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur non consequuntur reprehenderit unde vel optio repellat rem voluptatum aperiam explicabo, vitae, facere aut. Sed rerum illum modi tempore natus dolore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia laboriosam exercitationem nobis in autem magni recusandae temporibus quidem enim sequi quae iste deleniti praesentium distinctio, itaque sint quisquam ducimus. Earum.
   
-.center
+.center_share
   .btn-social
     .a.js-social-share.facebook href=("https://www.facebook.com/sharer/sharer.php?u=<%= yield :url %>") target="_blank" 
       i.fa.fa-facebook-official aria-hidden="true" 
@@ -48,3 +43,18 @@
       p.card-text
         small.text-muted Last updated 3 mins ago
 
+footer
+    div class="main-content"
+      div class="left box"
+        div class="content"
+          p Music, People, Lifestyle and Future Creatives
+      div class="center box"
+        div class="social"
+          a href="https://twitter.com/Argocreatives" class="social_links"
+            div class="fab fa-twitter"
+          a href="#"class="social_links"
+            div class="fab fa-facebook-f"
+          a href="https://www.instagram.com/Argocreatives/"class="social_links"
+            div class="fab fa-instagram"
+          a href ="" class="social_links"
+            div class="fab fa-spotify"
