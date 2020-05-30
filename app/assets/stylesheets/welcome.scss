@@ -21,7 +21,9 @@ a {
   border-color: white;
   color: white !important;
 }
-
+.w-100 {
+  padding-top: 8vh;
+}
 .h1 {
   font-weight: 700;
 }
@@ -229,7 +231,7 @@ a:hover {
   }
 
   .w-100 {
-    padding-top: 10vh;
+    padding-top: 9vh;
     width: 180% !important;
   }
 
