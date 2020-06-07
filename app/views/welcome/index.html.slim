@@ -28,7 +28,9 @@
     span.carousel-control-next-icon aria-hidden="true" 
     span.sr-only Next
 
-div class="headers" Up To The Minute
+.div_flex 
+  div class="headers" Up To The Minute
+  a class="view_more_articles" href="/news" View All>
 .articles
   - @articles.each do |article|
       div class="articles__article-card" 
@@ -41,36 +43,18 @@ div class="headers" Up To The Minute
           = link_to "Read More", article_path(article), class:"btn btn-primary"
 
 
-/.back
-  div class="headers" Up To The Minute
-  .card-columns
-    - @articles.each do |article|
-      .card style=("width: 24rem;") 
-        img.card-img-top alt="..." src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
-        .card-body
-          h5.card-title = article.title
-          p.card-text = article.text
-          a.btn.btn-primary href="#"  Go somewhere
-
 .back
-  div class="headers" Creatives
+  .div_flex 
+    div class="headers" Creatives
+    a class="view_more" href="/creatives" View All>
   .articles_artist
+    - @creatives.each do |creative|
       div class="articles_artist_article-card"
-        div class="articles_artist_article-card__top"
-          span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
-        .a_artist = link_to'View Artist'
-      div class="articles_artist_article-card"
-        div class="articles_artist_article-card__top"
-          span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
-        .a_artist = link_to'View Artist'
-      div class="articles_artist_article-card"
-        div class="articles_artist_article-card__top"
-          span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
-        .a_artist = link_to'View Artist'
-      div class="articles_artist_article-card"
+        a href="/creatives/#{creative.id}" 
           div class="articles_artist_article-card__top"
-            span class="articles_artist_article-card__top__article-cat letter-spacing" Artist
-          .a_artist = link_to'View Artist'
+            span class="articles_artist_article-card__top__article-cat letter-spacing" = creative.industry 
+
+     
 
 footer
     div class="main-content"

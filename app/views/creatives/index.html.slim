@@ -9,7 +9,7 @@ div class="headers" Creatives
           span class="articles__article-card__top__article-cat letter-spacing" = creative.industry
         div class="articles__article-card__bottom"
           div class="articles__article-card__bottom__date-title"
-            time class="articles__article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
+            time class="articles__article-card__bottom__date-title__date letter-spacing" = creative.preview_text
           h2 class="articles__article-card__bottom__date-title__title" = creative.name
           = link_to "View Creative", creative_path(creative), class:"btn btn-primary"
 

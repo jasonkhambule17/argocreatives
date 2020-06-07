@@ -5,43 +5,53 @@
     .carousel-item.active
       img.d-block.w-100 alt=("First slide") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
       .carousel-caption.d-none.d-md-block
-        h1 uuou  out
+        h1 = @creative.name
 
 .news-section
-  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias tempora sed aliquid ab quam possimus id animi ratione, ea veritatis sunt rem optio eos quis suscipit, harum a ipsam nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur non consequuntur reprehenderit unde vel optio repellat rem voluptatum aperiam explicabo, vitae, facere aut. Sed rerum illum modi tempore natus dolore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia laboriosam exercitationem nobis in autem magni recusandae temporibus quidem enim sequi quae iste deleniti praesentium distinctio, itaque sint quisquam ducimus. Earum.
+  p = @creative.description
   
 .center_share
-  .btn-social
-    .a.js-social-share.facebook href=("https://www.facebook.com/sharer/sharer.php?u=<%= yield :url %>") target="_blank" 
-      i.fa.fa-facebook-official aria-hidden="true" 
-  .btn-social
-    .a.js-social-share.twitter href=("https://twitter.com/intent/tweet?text=“= yield :title %>”&url = yield :url &via=twitter") target="_blank" 
+  - if @creative.facebook.present?
+    .btn-social
+      i.fa.fa-facebook-official aria-hidden="true"
+        a class="a.js-social-share.facebook" href=("https://www.facebook.com/#{@creative.facebook}") target="_blank" 
+  - if @creative.twitter.present?       
+    .btn-social
       i.fa.fa-twitter aria-hidden="true"
+        a class="a.js-social-share.twitter" href=("https://twitter.com/#{@creative.twitter}") target="_blank" 
+  - if @creative.instagram.present?        
+    .btn-social
+      i.fa.fa-instagram aria-hidden="true"
+        a class="a.js-social-share.twitter" href=("https://instagram.com/#{@creative.instagram}") target="_blank" 
+  - if @creative.youtube.present?       
+    .btn-social
+      i.fa.fa-youtube aria-hidden="true"
+        a class="a.js-social-share.twitter" href=("https://youtube.com/#{@creative.youtube}") target="_blank" 
+  - if @creative.spotify.present?        
+    .btn-social
+      i.fa.fa-spotify aria-hidden="true"
+        a class="a.js-social-share.twitter" href=("https://spotify.com/#{@creative.spotify}") target="_blank" 
+  - if @creative.soundcoud.present?       
+    .btn-social
+      i.fa.fa-soundcloud aria-hidden="true"
+        a class="a.js-social-share.twitter" href=("https://soundcloud.com/#{@creative.soundcoud}") target="_blank" 
+  - if @creative.apple_music.present?     
+    .btn-social
+      i.fa.fa-apple aria-hidden="true"
+        a class="a.js-social-share.twitter" href=("https://itunes.apple.com/za/artist/#{@creative.apple_music}") target="_blank" 
 
-.h3 More News
+/ .h3 More about creative
 
-.card-group
-  .card
-    img.card-img-top alt="..." src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
-    .card-body
-      h5.card-title Card title
-      p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-      p.card-text
-        small.text-muted Last updated 3 mins ago
-  .card
-    img.card-img-top alt="..." src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg"
-    .card-body
-      h5.card-title Card title
-      p.card-text This card has supporting text below as a natural lead-in to additional content.
-      p.card-text
-        small.text-muted Last updated 3 mins ago
-  .card
-    img.card-img-top alt="..." src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg"
-    .card-body
-      h5.card-title Card title
-      p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
-      p.card-text
-        small.text-muted Last updated 3 mins ago
+/ .card-group
+/   .card
+/     img.card-img-top alt="..." src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
+/     .card-body
+/       h5.card-title Check
+/       p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+/       p.card-text
+/         small.text-muted Last updated 3 mins ago
+
+
 
 footer
     div class="main-content"

@@ -8,6 +8,21 @@ a {
   margin: 0;
   padding: 0;
 }
+
+.div_flex{
+  display:flex;
+}
+
+.view_more{
+  color: black !important;
+  margin: 3rem 0rem 0rem 60rem;
+  text-decoration: none;
+}
+.view_more_articles{
+  color: black !important;
+  margin: 3rem 0rem 0rem 50rem;
+  text-decoration: none;
+}
 .btn,
 .btn-primary {
   text-align: left;
