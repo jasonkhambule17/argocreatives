@@ -13,8 +13,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'slim-rails'
 gem 'activeadmin'
 gem 'devise', '~> 4.2'
-gem 'bootstrap', '~> 4.4.1'
-gem 'jquery-rails'
 
 
 gem 'bootsnap', '>= 1.4.2', require: false

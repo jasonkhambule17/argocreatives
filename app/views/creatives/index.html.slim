@@ -1,0 +1,31 @@
+= stylesheet_link_tag 'articles_index', media: 'all', 'data-turbolinks-track': 'reload'
+
+
+div class="headers" Creatives
+.articles
+  - @creatives.each do |creative|
+      div class="articles__article-card" 
+        div class="articles__article-card__top"
+          span class="articles__article-card__top__article-cat letter-spacing" = creative.industry
+        div class="articles__article-card__bottom"
+          div class="articles__article-card__bottom__date-title"
+            time class="articles__article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
+          h2 class="articles__article-card__bottom__date-title__title" = creative.name
+          = link_to "View Creative", creative_path(creative), class:"btn btn-primary"
+
+
+footer
+    div class="main-content"
+      div class="left box"
+        div class="content"
+          p Music, People, Lifestyle and Future Creatives
+      div class="center box"
+        div class="social"
+          a href="https://twitter.com/Argocreatives" class="social_links"
+            div class="fab fa-twitter"
+          a href="#"class="social_links"
+            div class="fab fa-facebook-f"
+          a href="https://www.instagram.com/Argocreatives/"class="social_links"
+            div class="fab fa-instagram"
+          a href ="" class="social_links"
+            div class="fab fa-spotify"
