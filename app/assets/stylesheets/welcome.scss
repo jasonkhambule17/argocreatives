@@ -15,12 +15,12 @@ a {
 
 .view_more{
   color: black !important;
-  margin: 3rem 0rem 0rem 60rem;
+  padding: 3rem 0rem 0rem 52rem;
   text-decoration: none;
 }
 .view_more_articles{
   color: black !important;
-  margin: 3rem 0rem 0rem 50rem;
+  padding: 3rem 0rem 0rem 52rem;
   text-decoration: none;
 }
 .btn,
@@ -99,6 +99,7 @@ a:hover {
   color: black;
   padding: 36px !important;
   font-size: 25px;
+  width:100%;
 }
 
 .h1_artist_underline {
@@ -198,6 +199,12 @@ a:hover {
     width: 100%;
     font-size: 20px;
   }
+  .view_more{
+    padding: 2.6rem 0rem 0rem 4rem;
+  }
+  .view_more_articles{
+    padding: 3rem 0rem 0rem 4rem;
+  }
   /*Footer styling */
 
   footer {
@@ -259,9 +266,7 @@ a:hover {
   .carousel-indicators {
     z-index: 0;
   }
-  .articles_artist {
-    padding-bottom: 80px;
-  }
+
 }
 
 /* MAIN CONTAINER */
@@ -272,6 +277,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 80px;
 }
 
 .back {
