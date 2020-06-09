@@ -10,33 +10,33 @@
 .news-section
   p = @creative.description
   
-.center_share
+.center_share_artists
   - if @creative.facebook.present?
-    .btn-social
+    .btn-social_artist
       i.fa.fa-facebook-official aria-hidden="true"
         a class="a.js-social-share.facebook" href=("https://www.facebook.com/#{@creative.facebook}") target="_blank" 
   - if @creative.twitter.present?       
-    .btn-social
+    .btn-social_artist
       i.fa.fa-twitter aria-hidden="true"
         a class="a.js-social-share.twitter" href=("https://twitter.com/#{@creative.twitter}") target="_blank" 
   - if @creative.instagram.present?        
-    .btn-social
+    .btn-social_artist
       i.fa.fa-instagram aria-hidden="true"
         a class="a.js-social-share.twitter" href=("https://instagram.com/#{@creative.instagram}") target="_blank" 
   - if @creative.youtube.present?       
-    .btn-social
+    .btn-social_artist
       i.fa.fa-youtube aria-hidden="true"
         a class="a.js-social-share.twitter" href=("https://youtube.com/#{@creative.youtube}") target="_blank" 
   - if @creative.spotify.present?        
-    .btn-social
+    .btn-social_artist
       i.fa.fa-spotify aria-hidden="true"
         a class="a.js-social-share.twitter" href=("https://spotify.com/#{@creative.spotify}") target="_blank" 
   - if @creative.soundcoud.present?       
-    .btn-social
+    .btn-social_artist
       i.fa.fa-soundcloud aria-hidden="true"
         a class="a.js-social-share.twitter" href=("https://soundcloud.com/#{@creative.soundcoud}") target="_blank" 
   - if @creative.apple_music.present?     
-    .btn-social
+    .btn-social_artist
       i.fa.fa-apple aria-hidden="true"
         a class="a.js-social-share.twitter" href=("https://itunes.apple.com/za/artist/#{@creative.apple_music}") target="_blank" 
 
