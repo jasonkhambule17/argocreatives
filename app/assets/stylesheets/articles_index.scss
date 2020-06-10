@@ -173,6 +173,11 @@ a:hover {
   .headers {
     padding: 75px 36px 36px 36px !important;
   }
+
+  .articles__article-card{
+    padding-bottom: 60px;
+  }
+
   .hero {
     /* Photo by mnm.all on Unsplash */
     background: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg")
@@ -227,7 +232,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0;
+    padding: 16px 0px 0px 0px !important;
   }
 }
 

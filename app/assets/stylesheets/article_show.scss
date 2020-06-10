@@ -12,7 +12,7 @@ html {
 .center_share {
   align-items: center;
   display: flex;
-  padding-left: 83vh;
+  padding-left: 80vh;
   padding-top: 10px;
   padding-right: 40px;
 }
@@ -20,8 +20,8 @@ html {
 .center_share_artists{
   align-items: center;
   display: flex;
-  padding-left: 62vh;
-  padding-top: 0px;
+  padding-left: 60vh;
+  padding-top: 10px;
   padding-right: 40px;
   padding-bottom: 40px;
 }
@@ -75,18 +75,18 @@ html {
   .center_share {
     align-items: center;
     display: flex;
-    padding-left: 16vh;
+    padding-left: 12vh;
     padding-top: 0px;
     padding-right: 40px;
   }
 
   .h5{
-    padding: 4rem 0rem 0rem 9rem;
+    padding: 4rem 0rem 0rem 8rem;
     font-size: 1rem;
   }
 
   .center_share_artists{
-    padding:0px 0px 0px 64px;
+    padding:0px 0px 0px 62px;
     margin: 0px 0px 80px 0px;
     align-items: center;
     display: flex;
@@ -135,7 +135,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0;
+    padding: 16px 0px 0px 0px !important;
   }
 }
 

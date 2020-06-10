@@ -101,6 +101,13 @@ a:hover {
   font-size: 25px;
   width:100%;
 }
+.headers_top {
+  text-align: left;
+  color: black;
+  padding: 36px !important;
+  font-size: 25px;
+  width:100%;
+}
 
 .h1_artist_underline {
   margin-left: auto;
@@ -195,15 +202,27 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     align-items: center;
   }
+
+  .headers_top{
+    font-size: 17px;
+    padding:36px 16px 36px 28px !important;  
+  }
+
   .h1__underline {
     width: 100%;
     font-size: 20px;
   }
+
   .view_more{
-    padding: 2.6rem 0rem 0rem 4rem;
+    padding: 0.4rem 0rem 0rem 6rem;
   }
+
   .view_more_articles{
-    padding: 3rem 0rem 0rem 4rem;
+    padding:2.2rem 0rem 0rem 8rem;  
+  }
+
+  .headers{
+    padding:0px 36px !important;
   }
   /*Footer styling */
 
@@ -236,8 +255,9 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0;
+    padding: 16px 0px 0px 0px !important;
   }
+
   .articles_artist_article-card {
     width: 100%;
   }
@@ -403,3 +423,6 @@ a {
   justify-content: space-around;
   padding: 36px 0px 0px 0px;
 }
+
+
+
