@@ -4,14 +4,18 @@
 div class="headers" Up To The Minute
 .articles
   - @articles.each do |article|
+    - if article.article_image.present?
       div class="articles__article-card" 
-        div class="articles__article-card__top"
+        div = image_tag (article.article_image), :class=>"articles__article-card__top"
           span class="articles__article-card__top__article-cat letter-spacing" NEWS
         div class="articles__article-card__bottom"
           div class="articles__article-card__bottom__date-title"
             time class="articles__article-card__bottom__date-title__date letter-spacing" yoyyiyp 13th
           h2 class="articles__article-card__bottom__date-title__title" = article.title
           = link_to "Read More", article_path(article), class:"btn btn-primary"
+
+/ = image_tag (article.article_image), :class => "articles__article-card__top"
+/ = image_tag (@article.article_image), :class => "d-block, w-100"
 
 
 footer
