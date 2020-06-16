@@ -10,7 +10,7 @@ ActiveAdmin.register Article do
   form do |f|
     f.semantic_errors # shows errors on :base
     f.inputs          # builds an input field for every attribute
-    f.input :article_image, as: :file
+    f.input :article_image, direct_upload: true, as: :file
     f.actions         # adds the 'Submit' and 'Cancel' buttons
   end
 

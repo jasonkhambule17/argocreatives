@@ -6,8 +6,14 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
-# cloudinary:      
-#   service: Cloudinary
+cloudinary:      
+  service: Cloudinary
+
+cloudinary:
+  service: Cloudinary
+  cloud_name: <%= ENV['argocreatives'] %>
+  api_key:    <%= ENV['598322351233443'] %>
+  api_secret: <%= ENV['gfQkKblKtTgdIdgZRz19F1GCfgY'] %>
 
 # development:
 #   cloud_name: argocreatives
