@@ -14,8 +14,6 @@ gem 'slim-rails'
 gem 'activeadmin'
 gem 'devise', '~> 4.2'
 
-gem 'cloudinary', require: false
-gem 'activestorage-cloudinary-service'
 
 gem 'bootsnap', '>= 1.4.2', require: false
 
