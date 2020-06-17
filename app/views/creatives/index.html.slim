@@ -5,7 +5,7 @@ div class="headers" Creatives
 .articles
   - @creatives.each do |creative|
       div class="articles__article-card" 
-        div class="articles__article-card__top"
+        div = image_tag (creative.artist_image), :class=>"articles__article-card__top"
           span class="articles__article-card__top__article-cat letter-spacing" = creative.industry
         div class="articles__article-card__bottom"
           div class="articles__article-card__bottom__date-title"
