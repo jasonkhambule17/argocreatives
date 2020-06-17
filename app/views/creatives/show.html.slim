@@ -3,7 +3,7 @@
 #carouselExampleIndicators.carousel.slide data-ride="carousel" 
   .carousel-inner
     .carousel-item.active
-      img.d-block.w-100 alt=("First slide") src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
+      = image_tag (@creative.artist_image), :class => "d-block, w-100" 
       .carousel-caption.d-none.d-md-block
         h1 = @creative.name
 

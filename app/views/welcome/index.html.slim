@@ -50,10 +50,15 @@
     a class="view_more" href="/creatives" View All>
   .articles_artist
     - @creatives.each do |creative|
+      - if creative.artist_image.present?
       div class="articles_artist_article-card"
         a href="/creatives/#{creative.id}" 
-          div class="articles_artist_article-card__top"
-            span class="articles_artist_article-card__top__article-cat letter-spacing" = creative.industry 
+          div = image_tag (creative.artist_image), :class=>"articles_artist_article-card__top"
+            span class="articles_artist_article-card__top__article-cat letter-spacing" = creative.industry
+          div class="articles__article-card__bottom"
+            div class="articles__article-card__bottom__date-title"
+              time class="articles__article-card__bottom__date-title__date letter-spacing" Creative
+            h2 class="articles__article-card__bottom__date-title__title" = creative.name
 
      
 
