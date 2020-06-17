@@ -33,8 +33,9 @@
   a class="view_more_articles" href="/news" View All>
 .articles
   - @articles.each do |article|
+    - if article.article_image.present?
       div class="articles__article-card" 
-        div class="articles__article-card__top"
+        div = image_tag (article.article_image), :class=>"articles__article-card__top"
           span class="articles__article-card__top__article-cat letter-spacing" NEWS
         div class="articles__article-card__bottom"
           div class="articles__article-card__bottom__date-title"
