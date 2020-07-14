@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :articles, only: [:index, :show], :path => "news"
 
-  resources :contact_us, only: [:index], :path => "contact_us"
+  resources :contacts
 
   root 'welcome#index'
 end

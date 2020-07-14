@@ -1,0 +1,12 @@
+
+h2.w3-wide CONTACT
+p Send us a message here:
+= form_for Contact.new do |f|
+ 
+  = f.text_field :name, placeholder: 'Name', type: 'text'
+
+  = f.text_field :email, placeholder: 'Email'
+  = f.text_field :phone, placeholder: 'Phone'
+  = f.text_area :message, as: :text, placeholder: 'Message'
+
+  = f.submit 'Send message'
