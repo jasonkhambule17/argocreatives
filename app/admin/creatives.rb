@@ -5,7 +5,7 @@ ActiveAdmin.register Creative do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-   permit_params :name, :description, :preview_text, :industry, :twitter, :facebook, :instagram, :spotify, :soundcoud, :apple_music, :youtube, :artist_image
+  permit_params :name, :description, :preview_text, :industry, :twitter, :facebook, :instagram, :spotify, :soundcoud, :apple_music, :youtube, :artist_image
   #
   form do |f|
     f.semantic_errors # shows errors on :base
@@ -13,24 +13,24 @@ ActiveAdmin.register Creative do
     f.input :artist_image, as: :file
     f.actions         # adds the 'Submit' and 'Cancel' buttons
   end
-show do
-  attributes_table do
-    row :name
-    row :description
-    row :preview_text
-    row :industry
-    row :twitter
-    row :facebook
-    row :instagram
-    row :spotify
-    row :soundcoud
-    row :apple_music
-    row :youtube
-    row :artist_image do |image|
-      image_tag url_for(image.artist_image)
+  show do
+    attributes_table do
+      row :name
+      row :description
+      row :preview_text
+      row :industry
+      row :twitter
+      row :facebook
+      row :instagram
+      row :spotify
+      row :soundcoud
+      row :apple_music
+      row :youtube
+      row :artist_image do |image|
+        image_tag url_for(image.artist_image)
+      end
     end
   end
-end
 
   # or
   #
