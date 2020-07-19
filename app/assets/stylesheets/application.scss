@@ -80,6 +80,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 992px){
+  .social_links{
+    padding: 0px 20px ;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
@@ -117,7 +123,7 @@ a:hover {
 
   .burger {
     display: block;
-    margin-left: 28vh;
+    margin-left: 90vh !important;
   }
 
   .medialinks {
@@ -148,3 +154,12 @@ a:hover {
     }
   }
 }
+ @media screen and (max-width: 576px){
+  .nav-links{
+    padding: 0vh 12vh 35vh 0vh;
+  }
+  .burger{
+    margin-left:63vh !important;
+  }
+}
+
