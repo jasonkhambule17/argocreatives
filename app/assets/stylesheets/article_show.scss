@@ -42,6 +42,29 @@ html {
   padding-bottom: 120px;
 }
 
+@media screen and (max-width: 1200px){
+  .h5{
+    padding-left: 34rem;
+  }
+  .center_share{
+    padding-left: 94vh;
+  }
+  .center_share_artists{
+    padding-left: 69vh;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .h5{
+    padding-left: 29rem;
+  }
+  .center_share{
+  padding-left: 80vh;
+  }
+    .center_share_artists{
+    padding-left: 50vh;
+  }
+}
 @media screen and (max-width: 768px) {
   .news-section {
     padding: 1rem 2rem 0rem 2rem;
@@ -75,18 +98,18 @@ html {
   .center_share {
     align-items: center;
     display: flex;
-    padding-left: 12vh;
+    padding-left: 48vh;
     padding-top: 0px;
     padding-right: 40px;
   }
 
   .h5{
-    padding: 4rem 0rem 0rem 8rem;
+    padding: 4rem 0rem 0rem 20rem;
     font-size: 1rem;
   }
 
   .center_share_artists{
-    padding:0px 0px 0px 62px;
+    padding:50px 0px 0px 240px;
     margin: 0px 0px 80px 0px;
     align-items: center;
     display: flex;
@@ -138,6 +161,22 @@ html {
     padding: 16px 0px 0px 0px !important;
   }
 }
+
+@media screen and (max-width: 576px){
+  .h5 {
+    padding: 4rem 0rem 0rem 14rem;
+  }
+  .center_share{
+    padding-left:32vh;
+  }
+  .center_share_artists{
+    padding: 0px 0px 0px 142px;
+    margin: 40px 0px 80px 0px;
+  }
+}
+
+
+
 
 .h3 {
   padding: 20px;

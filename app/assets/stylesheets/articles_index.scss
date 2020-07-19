@@ -172,7 +172,7 @@ a:hover {
   }
 
   .headers {
-    padding: 75px 36px 36px 36px !important;
+    padding: 85px 36px 36px 36px !important;
   }
 
   .articles__article-card{
@@ -237,6 +237,22 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .headers {
+    padding: 85px 36px 36px 36px !important;
+  }
+}
+@media screen and (max-width: 992px){
+  .headers{
+    padding: 76px 36px 36px 36px !important;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .headers{
+    padding: 86px 36px 36px 36px !important;
+  }
+}
 /* MAIN CONTAINER */
 
 .articles_artist {

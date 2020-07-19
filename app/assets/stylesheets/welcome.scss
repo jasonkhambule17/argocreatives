@@ -191,7 +191,34 @@ a:hover {
 .letter-spacing {
   letter-spacing: 0.05em;
 }
+
+@media screen and (max-width: 1200px){
+  .view_more_articles{
+    padding: 3rem 0rem 0rem 45rem;
+  }
+  .view_more{
+   padding: 3rem 0rem 0rem 45rem; 
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .view_more_articles{
+    padding: 3rem 0rem 0rem 32rem ;
+  }
+  .view_more{
+    padding: 3rem 0rem 0rem 32rem ;
+  }
+  .div_flex{
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .burger{
+    margin-left:60vh;
+  }
+
+
   .hero {
     /* Photo by mnm.all on Unsplash */
     background: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg")
@@ -215,11 +242,11 @@ a:hover {
   }
 
   .view_more{
-    padding: 0.4rem 0rem 0rem 6rem;
+    padding: 0.4rem 0rem 0rem 24rem;
   }
 
   .view_more_articles{
-    padding:2.2rem 0rem 0rem 8rem;  
+    padding:2.2rem 0rem 0rem 24rem;  
   }
 
   .headers{
@@ -289,6 +316,25 @@ a:hover {
   }
 
 }
+
+@media screen and (max-width: 576px) {
+
+  .view_more_articles {
+    padding: 2.2rem 0rem 0rem 15rem;
+  }
+  .articles__article-card{
+    margin-bottom:0;
+  }
+  .view_more{
+   padding: 0.4rem 0rem 0rem 15rem; 
+  }
+
+}
+
+
+
+
+
 
 /* MAIN CONTAINER */
 
