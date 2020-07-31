@@ -9,16 +9,16 @@ a {
   padding: 0;
 }
 
-.div_flex{
-  display:flex;
+.div_flex {
+  display: flex;
 }
 
-.view_more{
+.view_more {
   color: black !important;
   padding: 3rem 0rem 0rem 52rem;
   text-decoration: none;
 }
-.view_more_articles{
+.view_more_articles {
   color: black !important;
   padding: 3rem 0rem 0rem 52rem;
   text-decoration: none;
@@ -99,14 +99,14 @@ a:hover {
   color: black;
   padding: 36px !important;
   font-size: 25px;
-  width:100%;
+  width: 100%;
 }
 .headers_top {
   text-align: left;
   color: black;
   padding: 36px !important;
   font-size: 25px;
-  width:100%;
+  width: 100%;
 }
 
 .h1_artist_underline {
@@ -142,7 +142,7 @@ a:hover {
 /* ARTICLE CARDS - TOP */
 
 .articles__article-card__top {
-  width:100%;
+  width: 100%;
   background-image: url("https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg");
   background-size: cover;
   height: 60%;
@@ -192,32 +192,30 @@ a:hover {
   letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 1200px){
-  .view_more_articles{
+@media screen and (max-width: 1200px) {
+  .view_more_articles {
     padding: 3rem 0rem 0rem 45rem;
   }
-  .view_more{
-   padding: 3rem 0rem 0rem 45rem; 
+  .view_more {
+    padding: 3rem 0rem 0rem 45rem;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .view_more_articles{
-    padding: 3rem 0rem 0rem 32rem ;
+  .view_more_articles {
+    padding: 3rem 0rem 0rem 32rem;
   }
-  .view_more{
-    padding: 3rem 0rem 0rem 32rem ;
+  .view_more {
+    padding: 3rem 0rem 0rem 32rem;
   }
-  .div_flex{
+  .div_flex {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .burger{
-    margin-left:60vh;
+  .burger {
   }
-
 
   .hero {
     /* Photo by mnm.all on Unsplash */
@@ -231,9 +229,9 @@ a:hover {
     align-items: center;
   }
 
-  .headers_top{
+  .headers_top {
     font-size: 17px;
-    padding:36px 16px 36px 28px !important;  
+    padding: 36px 16px 36px 28px !important;
   }
 
   .h1__underline {
@@ -241,16 +239,16 @@ a:hover {
     font-size: 20px;
   }
 
-  .view_more{
+  .view_more {
     padding: 0.4rem 0rem 0rem 24rem;
   }
 
-  .view_more_articles{
-    padding:2.2rem 0rem 0rem 24rem;  
+  .view_more_articles {
+    padding: 2.2rem 0rem 0rem 24rem;
   }
 
-  .headers{
-    padding:0px 36px !important;
+  .headers {
+    padding: 0px 36px !important;
   }
   /*Footer styling */
 
@@ -302,7 +300,7 @@ a:hover {
 
   .w-100 {
     padding-top: 9vh;
-    width: 180% !important;
+    width: 180%;
   }
 
   .carousel-control-next {
@@ -314,27 +312,19 @@ a:hover {
   .carousel-indicators {
     z-index: 0;
   }
-
 }
 
 @media screen and (max-width: 576px) {
-
   .view_more_articles {
-    padding: 2.2rem 0rem 0rem 15rem;
+    padding: 2.2rem 0rem 0rem 5rem;
   }
-  .articles__article-card{
-    margin-bottom:0;
+  .articles__article-card {
+    margin-bottom: 0;
   }
-  .view_more{
-   padding: 0.4rem 0rem 0rem 15rem; 
+  .view_more {
+    padding: 0.4rem 0rem 0rem 5rem;
   }
-
 }
-
-
-
-
-
 
 /* MAIN CONTAINER */
 
@@ -471,6 +461,3 @@ a {
   justify-content: space-around;
   padding: 36px 0px 0px 0px;
 }
-
-
-
