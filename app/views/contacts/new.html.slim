@@ -1,12 +1,14 @@
+= stylesheet_link_tag 'contact_us', media: 'all', 'data-turbolinks-track': 'reload'
 
-h2.w3-wide CONTACT
-p Send us a message here:
+.contact_us_top 
+  h2.w3-wide CONTACT
+  p Send us a message here:
 = form_for Contact.new do |f|
  
-  = f.text_field :name, placeholder: 'Name', type: 'text'
+  = f.text_field :name, placeholder: 'Name', type: 'text', class:'name'
 
-  = f.text_field :email, placeholder: 'Email'
-  = f.text_field :phone, placeholder: 'Phone'
-  = f.text_area :message, as: :text, placeholder: 'Message'
+  = f.text_field :email, placeholder: 'Email', class:'email'
+  = f.text_field :phone, placeholder: 'Phone', class:'phone'
+  = f.text_area :message, as: :text, placeholder: 'Message', class:'message'
 
   = f.submit 'Send message'
