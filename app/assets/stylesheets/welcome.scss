@@ -316,13 +316,17 @@ a:hover {
 
 @media screen and (max-width: 576px) {
   .view_more_articles {
-    padding: 2.2rem 0rem 0rem 5rem;
+    padding: 2.2rem 0rem 0rem 7rem;
   }
   .articles__article-card {
     margin-bottom: 0;
   }
   .view_more {
-    padding: 0.4rem 0rem 0rem 5rem;
+    padding: 0.4rem 0rem 0rem 7rem;
+  }
+  .w-100 {
+    padding-top: 9vh;
+    width: 180% !important;
   }
 }
 

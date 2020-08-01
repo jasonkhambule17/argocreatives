@@ -17,7 +17,7 @@ html {
   padding-right: 40px;
 }
 
-.center_share_artists{
+.center_share_artists {
   align-items: center;
   display: flex;
   padding-left: 60vh;
@@ -30,38 +30,38 @@ html {
   padding: 20px;
 }
 
-.btn-social_artist{
+.btn-social_artist {
   padding: 20px;
 }
 .h5 {
   padding-left: 36rem;
   font-size: 1rem;
-  }
+}
 
 .card-group {
   padding-bottom: 120px;
 }
 
-@media screen and (max-width: 1200px){
-  .h5{
+@media screen and (max-width: 1200px) {
+  .h5 {
     padding-left: 34rem;
   }
-  .center_share{
+  .center_share {
     padding-left: 94vh;
   }
-  .center_share_artists{
+  .center_share_artists {
     padding-left: 69vh;
   }
 }
 
-@media screen and (max-width: 992px){
-  .h5{
+@media screen and (max-width: 992px) {
+  .h5 {
     padding-left: 29rem;
   }
-  .center_share{
-  padding-left: 80vh;
+  .center_share {
+    padding-left: 80vh;
   }
-    .center_share_artists{
+  .center_share_artists {
     padding-left: 50vh;
   }
 }
@@ -103,20 +103,20 @@ html {
     padding-right: 40px;
   }
 
-  .h5{
+  .h5 {
     padding: 4rem 0rem 0rem 20rem;
     font-size: 1rem;
   }
 
-  .center_share_artists{
-    padding:50px 0px 0px 240px;
+  .center_share_artists {
+    padding: 50px 0px 0px 240px;
     margin: 0px 0px 80px 0px;
     align-items: center;
     display: flex;
   }
 
-  .btn-social_artist{
-    padding:10px;
+  .btn-social_artist {
+    padding: 10px;
   }
 
   /*Footer styling */
@@ -162,21 +162,18 @@ html {
   }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .h5 {
-    padding: 4rem 0rem 0rem 14rem;
+    padding: 4rem 0rem 0rem 9rem;
   }
-  .center_share{
-    padding-left:32vh;
+  .center_share {
+    padding-left: 16vh;
   }
-  .center_share_artists{
-    padding: 0px 0px 0px 142px;
+  .center_share_artists {
+    padding: 0px 0px 0px 70px;
     margin: 40px 0px 80px 0px;
   }
 }
-
-
-
 
 .h3 {
   padding: 20px;
