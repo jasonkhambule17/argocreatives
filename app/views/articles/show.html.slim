@@ -23,14 +23,13 @@
 .h3 More News
 
 .card-group
-
-  .card
-    img.card-img-top alt="..." src="https://enfntsterribles.com/wp-content/uploads/2018/08/enfntsterribles-music-travis-scott-1-2-1-e1533131706890-1000x400.jpg" 
-    .card-body
-      h5.card-title Card title
-      p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-      p.card-text
-        small.text-muted Last updated 3 mins ago
+ - @articles.each do |article|
+    - if article.article_image.present?
+    .card
+      div = image_tag (article.article_image), :class=>".card-img-top"
+      .card-body
+        h5.card-title = article.title
+        = link_to "Read More", article_path(article), class:"btn btn-primary"
 
 
 footer

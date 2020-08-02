@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @articles = Article.all.limit(3).order("id DESC").all
   end
 
 
