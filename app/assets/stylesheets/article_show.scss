@@ -2,6 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.card {
+  border-style: none;
+  padding: 20px;
+}
+.w-100 {
+  height: 88vh;
+}
+
+img {
+  width: 100%;
+}
+
 .news-section {
   padding: 2rem 8rem 2rem 8rem;
 }
@@ -39,7 +51,20 @@ html {
 }
 
 .card-group {
-  padding-bottom: 120px;
+  padding-bottom: 20px;
+}
+.btn,
+.btn-primary {
+  text-align: left;
+  background-color: white;
+  color: black !important;
+  border-color: white;
+}
+
+.btn:hover {
+  background-color: #00bff3;
+  border-color: white;
+  color: white !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -51,6 +76,9 @@ html {
   }
   .center_share_artists {
     padding-left: 69vh;
+  }
+  .w-100 {
+    height: auto;
   }
 }
 

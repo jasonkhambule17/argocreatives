@@ -67,11 +67,12 @@
 /   .carousel-inner
 /    - @banners.each do |banner|
 /     - if banner.banner_image.present?
-/     .carousel-item.active
-/       div class="d-block" = image_tag (banner.banner_image), :class=>"w-100"
-/       .carousel-caption.d-none.d-md-block
-/         h3 uuou  out
-/         a.h1 href="/news/2" Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis ea quas necessitatibus esse, ul
+/       .carousel-item.carousel-item.active
+/       .carousel-item
+/         div class="d-block" = image_tag (banner.banner_image), :class=>"w-100"
+/         .carousel-caption.d-none.d-md-block
+/           h3 uuou  out
+/           a.h1 href="/news/2" Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis ea quas necessitatibus esse, ul
 
 
 
@@ -111,17 +112,17 @@
      
 
 footer
-    div class="main-content"
-      div class="left box"
-        div class="content"
-          p Music, People, Lifestyle and Future Creatives
-      div class="center box"
-        div class="social"
-          a href="https://twitter.com/Argocreatives" class="social_links"
-            div class="fab fa-twitter"
-          a href="#"class="social_links"
-            div class="fab fa-facebook-f"
-          a href="https://www.instagram.com/Argocreatives/"class="social_links"
-            div class="fab fa-instagram"
-          a href ="" class="social_links"
-            div class="fab fa-spotify"
+  div class="main-content"
+    div class="left box"
+      div class="content"
+        p Music, People, Lifestyle and Future Creatives
+    div class="center box"
+      div class="social"
+        a href="https://twitter.com/Argocreatives" class="social_links"
+          div class="fab fa-twitter"
+        a href="#"class="social_links"
+          div class="fab fa-facebook-f"
+        a href="https://www.instagram.com/Argocreatives/"class="social_links"
+          div class="fab fa-instagram"
+        a href ="" class="social_links"
+          div class="fab fa-spotify"
