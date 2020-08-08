@@ -11,14 +11,11 @@
   p = @article.text
 
 .h5 Share on socials
-
-.center_share 
-  .btn-social
-    .a.js-social-share.facebook href=("https://www.facebook.com/sharer/sharer.php?u=<%= yield :url %>") target="_blank" 
-      i.fa.fa-facebook-official aria-hidden="true" 
-  .btn-social
-    .a.js-social-share.twitter href=("https://twitter.com/intent/tweet?text=“= yield :title %>”&url = yield :url &via=twitter") target="_blank" 
-      i.fa.fa-twitter aria-hidden="true"
+.center_share
+  a href ="https://twitter.com/intent/tweet?text=#{@article.title} - #{request.original_url}" class="share_twitter a js-social-share.twitter" target="_blank"
+    div class="fab fa-twitter"
+  a href ="https://www.facebook.com/sharer/sharer.php?u=#{@article.title} - #{request.original_url}" class="share_facebook a js-social-share.twitter" target="_blank"
+    div class="fab fa-facebook-f"
 
 .h3 More News
 
