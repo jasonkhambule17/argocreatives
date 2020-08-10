@@ -5,8 +5,47 @@ form {
   margin: auto;
   width: 60%;
   padding: 10px;
+  margin-bottom: 80px;
+}
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: rgba(0, 191, 243, 0.73);
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(0, 191, 243, 0),
+      rgba(0, 191, 243, 0)
+    ),
+    url(https://res.cloudinary.com/argocreatives/image/upload/v1596913304/Argo_Full_Logo_Blue_Twitter_wou30c.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+form {
+  background: var(--color-green);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+.submit {
+  display: block;
+  width: 100%;
+  padding: 0;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
 .contact_us_top {
   padding-top: 100px;
   text-align: center;
@@ -139,6 +178,7 @@ a {
     margin: auto;
     width: 90%;
     padding: 10px;
+    margin-bottom: 130px;
   }
   .message {
     padding: 0px;
