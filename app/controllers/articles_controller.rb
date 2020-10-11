@@ -20,8 +20,8 @@ class ArticlesController < ApplicationController
   end
 
 
-def destroy
-  @creative = Creative.find(params[:id])
-  @creative.destroy
-end
+  def destroy
+    @creative = Creative.find(params[:id])
+    @creative.destroy
+  end
 end
