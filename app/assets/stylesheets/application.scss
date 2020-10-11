@@ -30,6 +30,9 @@ a:hover {
 
 /* Navigation bar styling */
 
+/* Navigation bar styling bootstrap*/
+
+
 .main-nav {
   z-index: 500;
   position: fixed;
@@ -128,7 +131,7 @@ a:hover {
 
   .burger {
     display: block;
-    margin-left: 90vh;
+    margin-left: 60vh;
   }
 
   .medialinks {
@@ -164,10 +167,10 @@ a:hover {
     padding: 0vh 12vh 35vh 0vh;
   }
   .burger {
-    margin-left: 30vh;
+    margin-left: 25vh;
   }
 
   .main-nav {
-    padding-left: 8vh;
+    padding-left: 4vh;
   }
 }
