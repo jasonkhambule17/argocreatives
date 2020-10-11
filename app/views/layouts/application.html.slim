@@ -10,21 +10,23 @@ html
 
     meta name="viewport" content="width=device-width, initial-scale=1.0;"
 
-    meta content=("<%= @article.title %>") property="og:title" 
-    meta content="article" property="og:type" 
-    meta content=("<%= article_url(@article) %>") property="og:url" 
-    meta content=("<%= @article.body %>") property="og:description" 
-    meta content=("<%= absolute_image_url(img.attachment.url) %>") property="og:image" 
-    meta content="12345678" property="fb:app_id" 
-    meta content=("<%= @article.title %>") name="twitter:card" 
-    meta content="@mytwitter" name="twitter:site" 
+    / meta content=("<%= @article.title %>") property="og:title" 
+    / meta content="article" property="og:type" 
+    / meta content=("<%= article_url(@article) %>") property="og:url" 
+    / meta content=("<%= @article.body %>") property="og:description" 
+    / meta content=("<%= absolute_image_url(img.attachment.url) %>") property="og:image" 
+    / meta content="12345678" property="fb:app_id" 
+    / meta content=("<%= @article.title %>") name="twitter:card" 
+    / meta content="@mytwitter" name="twitter:site" 
 
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@article.service_url" />
-<meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />
-<meta property="og:title" content="A Twitter for My Sister" />
-<meta property="og:description" content="In the early days, Twitter grew so quickly that it was almost impossible to add new features because engineers spent their time trying to keep the rocket ship from stalling." />
-<meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" />
+    meta content="summary" name="twitter:card" 
+    meta content="@nytimesbits" name="twitter:site" 
+    meta content="@nickbilton" name="twitter:creator" 
+    meta content="#{@article.service_url}" property="og:url" 
+    meta content=(#{@article.title}) property="og:title" 
+    meta content=("#{@article.preview_text}") property="og:description" 
+    meta content="#{@article.article_image.service_url}" property="og:image" 
+
 
     link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"
 
