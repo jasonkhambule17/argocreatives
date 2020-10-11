@@ -47,12 +47,10 @@ img {
 }
 
 .center_share_artists {
-  align-items: center;
+  margin: auto;
   display: flex;
-  padding-left: 60vh;
-  padding-top: 10px;
-  padding-right: 40px;
   padding-bottom: 40px;
+  width: 25%;
 }
 
 .btn-social {
@@ -63,7 +61,7 @@ img {
   padding: 20px;
 }
 .h5 {
-  padding-left: 36rem;
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -89,20 +87,16 @@ img {
 
 @media screen and (max-width: 1200px) {
   .h5 {
-    padding-left: 34rem;
+    text-align: center; 
   }
 
   .center_share {
     padding: 20px 0px 20px 0px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 15%;
   }
 
-  .center_share_artists {
-    padding-left: 69vh;
-  }
   .w-100 {
     height: auto;
   }
@@ -110,18 +104,15 @@ img {
 
 @media screen and (max-width: 992px) {
   .h5 {
-    padding-left: 29rem;
+    text-align: center;
   }
   .center_share {
     padding: 20px 0px 20px 0px;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 15%;
   }
-  .center_share_artists {
-    padding-left: 50vh;
-  }
+
 }
 @media screen and (max-width: 768px) {
   .news-section {
@@ -162,15 +153,15 @@ img {
   }
 
   .h5 {
-    padding: 4rem 0rem 0rem 20rem;
+    text-align: center;
     font-size: 1rem;
   }
 
   .center_share_artists {
-    padding: 50px 0px 0px 240px;
-    margin: 0px 0px 80px 0px;
-    align-items: center;
+    margin: auto;
     display: flex;
+    padding-bottom: 40px;
+    width: 25%;
   }
 
   .btn-social_artist {
@@ -222,19 +213,20 @@ img {
 
 @media screen and (max-width: 576px) {
   .h5 {
-    padding: 4rem 0rem 0rem 9rem;
+    text-align: center;
   }
   .center_share {
     padding: 20px 0px 20px 0px;
     display: flex;
-    margin-left: 110px;
-    margin-right: auto;
+    margin: auto;
     width: 15%;
   }
 
   .center_share_artists {
-    padding: 0px 0px 0px 70px;
-    margin: 40px 0px 80px 0px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 40px;
+    width: 80%;
   }
 }
 

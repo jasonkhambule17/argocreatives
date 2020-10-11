@@ -19,13 +19,13 @@ html
     / meta content=("<%= @article.title %>") name="twitter:card" 
     / meta content="@mytwitter" name="twitter:site" 
 
-    meta content="summary" name="twitter:card" 
-    meta content="@nytimesbits" name="twitter:site" 
-    meta content="@nickbilton" name="twitter:creator" 
-    meta content="#{@article.service_url}" property="og:url" 
-    meta content=(#{@article.title}) property="og:title" 
-    meta content=("#{@article.preview_text}") property="og:description" 
-    meta content="#{@article.article_image.service_url}" property="og:image" 
+    / meta content="summary" name="twitter:card" 
+    / meta content="@nytimesbits" name="twitter:site" 
+    / meta content="@nickbilton" name="twitter:creator" 
+    / / meta content="#{@article.service_url}" property="og:url" 
+    / meta content=("#{@article.title}") property="og:title" 
+    / meta content=("#{@article.preview_text}") property="og:description" 
+    / / meta content="#{@article.article_image.service_url}" property="og:image" 
 
 
     link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"
