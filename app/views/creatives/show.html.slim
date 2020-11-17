@@ -38,7 +38,15 @@
   - if @creative.apple_music.present?     
     .btn-social_artist
       i.fa.fa-apple aria-hidden="true"
-        a class="a.js-social-share.twitter" href=("https://itunes.apple.com/za/artist/#{@creative.apple_music}") target="_blank" 
+        a class="a.js-social-share.twitter" href=("https://itunes.apple.com/za/artist/#{@creative.apple_music}") target="_blank"
+
+.h5 Share on socials
+.center_share
+  a href ="https://twitter.com/intent/tweet?text=#{@creative.name} - #{request.original_url}" class="share_twitter a js-social-share.twitter" target="_blank"
+    div class="fab fa-twitter"
+  a href ="https://www.facebook.com/sharer/sharer.php?u=#{@creative.name} - #{request.original_url}" class="share_facebook a js-social-share.twitter" target="_blank"
+    div class="fab fa-facebook-f"
+
 
 / .h3 More about creative
 
