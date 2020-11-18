@@ -1,13 +1,11 @@
 = stylesheet_link_tag 'article_show', media: 'all', 'data-turbolinks-track': 'reload'
 
-
-    meta content="summary" name="twitter:card" 
-    meta content="@nytimesbits" name="twitter:site" 
-    meta content="@nickbilton" name="twitter:creator" 
-    meta content="#{@article.url}" property="og:url" 
-    meta content="#{@article.title}" property="og:title" 
-    meta content="#{@article.preview_text}" property="og:description" 
-    meta content="#{@article.article_image.service_url}" property="og:image" 
+= content_for :head do
+  meta content="summary" name="twitter:card" 
+  meta content="" property="#{request.original_url}" 
+  meta content="" property="#{@article.title}" 
+  meta content="" property="#{@article.preview_text}" 
+  meta content="" property="#{url_for @article.article_image}" 
 
 #carouselExampleIndicators.carousel.slide data-ride="carousel" 
   .carousel-inner
@@ -21,7 +19,7 @@
 
 .h5 Share on socials
 .center_share
-  a href ="https://twitter.com/intent/tweet?text=#{@article.title} - #{request.original_url}" class="share_twitter a js-social-share.twitter" target="_blank"
+  a href ="https://twitter.com/intent/tweet?text= - #{request.original_url}" class="share_twitter a js-social-share.twitter" target="_blank"
     div class="fab fa-twitter"
   a href ="https://www.facebook.com/sharer/sharer.php?u=#{@article.title} - #{request.original_url}" class="share_facebook a js-social-share.twitter" target="_blank"
     div class="fab fa-facebook-f"
