@@ -1,13 +1,13 @@
 = stylesheet_link_tag 'article_show', media: 'all', 'data-turbolinks-track': 'reload'
 
-
-    meta content="summary" name="twitter:card" 
-    meta content="@nytimesbits" name="twitter:site" 
-    meta content="@nickbilton" name="twitter:creator" 
-    meta content="#{@article.url}" property="og:url" 
-    meta content="#{@article.title}" property="og:title" 
-    meta content="#{@article.preview_text}" property="og:description" 
-    meta content="#{@article.article_image.service_url}" property="og:image" 
+= content_for :head do
+  meta content="summary" name="twitter:card" 
+  meta content="@nytimesbits" name="twitter:site" 
+  meta content="@nickbilton" name="twitter:creator" 
+  meta content="#{request.original_url}" property="og:url" 
+  meta content="#{@article.title}" property="og:title" 
+  meta content="#{@article.preview_text}" property="og:description" 
+  meta content="#{url_for @article.article_image}" property="og:image" 
 
 #carouselExampleIndicators.carousel.slide data-ride="carousel" 
   .carousel-inner
