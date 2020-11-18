@@ -2,12 +2,10 @@
 
 = content_for :head do
   meta content="summary" name="twitter:card" 
-  meta content="@nytimesbits" name="twitter:site" 
-  meta content="@nickbilton" name="twitter:creator" 
-  meta content="#{request.original_url}" property="og:url" 
-  meta content="#{@article.title}" property="og:title" 
-  meta content="#{@article.preview_text}" property="og:description" 
-  meta content="#{url_for @article.article_image}" property="og:image" 
+  meta content="" property="#{request.original_url} " 
+  meta content="" property="#{@article.title}" 
+  meta content="" property="#{@article.preview_text}" 
+  meta content="" property="#{url_for @article.article_image}" 
 
 #carouselExampleIndicators.carousel.slide data-ride="carousel" 
   .carousel-inner
