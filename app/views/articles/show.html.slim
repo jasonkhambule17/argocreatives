@@ -5,7 +5,7 @@
   meta content="#{request.original_url}" property="og:url" 
   meta content="#{@article.title}" property="og:title" 
   meta content="#{@article.preview_text}" property="og:description" 
-  meta content="#{url_for @article.article_image}" property="og:image"
+  meta content="#{rails_blob_url @article.article_image}" property="og:image"
   
 
 #carouselExampleIndicators.carousel.slide data-ride="carousel" 
