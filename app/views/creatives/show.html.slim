@@ -3,7 +3,7 @@
 = content_for :head do
   meta content="summary" name="twitter:card" 
   meta content="#{request.original_url}" property="og:url" 
-  meta content="#{@creative.title}" property="og:title" 
+  meta content="#{@creative.name}" property="og:title" 
   meta content="#{@creative.preview_text}" property="og:description" 
   meta content="#{rails_blob_url @creative.artist_image}" property="og:image"
 
