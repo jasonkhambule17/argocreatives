@@ -6,6 +6,11 @@ html {
   border-style: none;
   padding: 20px;
 }
+.d-md-block {
+  display: block!important;
+  color: #00bff3;
+}
+
 .w-100 {
   height: 88vh;
 }
@@ -211,6 +216,9 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+  .d-md-block {
+  display: block!important;
+  }
   .h5 {
     text-align: center;
   }
